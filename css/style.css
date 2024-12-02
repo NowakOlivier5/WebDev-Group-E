@@ -1,0 +1,26 @@
+.icon{
+	width: 15%;
+}
+.on-p{
+	background-color: #03026f;
+	color: white;
+	text-shadow: black 2px 2px;
+}
+.on-h1{
+	
+}
+.on-h2{
+	background-color: #03026f;
+	color: white;
+	text-shadow: black 2px 2px;
+}
+.on-img{
+	width: 100%;
+	length: 100%;
+}
+footer{
+	background-color: #03026f;
+}
+.col-sm-6{
+	background-color: black;
+}
