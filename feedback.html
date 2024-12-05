@@ -6,9 +6,9 @@
   <title>Feedback</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="asexternal.js"></script>
 </head>
-<body>
-	<body style="background-image: url('images/background2.jpg'); background-size: cover; background-attachment: fixed; background-position: center;">
+<body style="background-image: url('images/background2.jpg'); background-size: cover; background-attachment: fixed; background-position: center;">
 		<div class="row">
 			<ul class="nav">
 				<li class="nav-item">
@@ -19,7 +19,7 @@
 		
 	  <!-- Header with grid images -->
 <div class="container">
-  <h1 class="text-center mb-4">Endangered Marine Animal Life</h1>
+  <h1 class="text-center mb-4">More about Threatened Marine Wildlife</h1>
   <div class="row">
     <div class="col-md-6">
       <img src="images/img5.jpeg" class="img-fluid grid-img" alt="Image 1">
@@ -35,6 +35,28 @@
     </div>
   </div>
 </div>
+  <br>
+  <br>
+  <!-- DOM manipulation - Show/Hide Task -->
+  <h3>A little bit about marine life history</h3>
+  <div id="hideTask">
+  <div class="card">
+  <div class="card-body">
+    <p>Since Homo sapiens began exploiting marine environments, human activities have driven significant marine animal extinctions. Early overfishing, hunting, and habitat destruction disrupted ecosystems. Species like the Steller's sea cow and Caribbean monk seal were hunted to extinction. Industrialization intensified the impact, with pollution, overfishing, and climate change accelerating declines. Coral reefs, crucial habitats, have been devastated by warming seas and acidification. Although conservation efforts have emerged, over 30% of marine species face extinction, highlighting humanity’s profound influence on marine biodiversity over millennia.</p>
+  </div>
+  </div>
+  </div>
+  <button onclick="showHide()" class="btn btn-primary mb-4">Minimize</button>
+
+  <!-- Array Task -->
+  <h3>Some of the most endangered species:</h3>
+  <div class="card">
+  <div class="card-body">
+  <p id="task2">We need to preserve the lives of marine animals!</p>
+  </div>
+  </div>
+  <button onclick="arrayTwo()" class="btn btn-primary mb-4">See more</button>
+
 	<!-- Text boxs -->
 	
 	<section id="projects" class="container py-5">
@@ -102,5 +124,3 @@
 </body>
 </html>
   
-</body>
-</html>
