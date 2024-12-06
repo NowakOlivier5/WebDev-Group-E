@@ -1,0 +1,28 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #222; /*dark background */
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.grid-img {
+  margin: 10px auto;
+  width: 150px; /* fixed width */
+  height: 150px; /*fixed height */
+  object-fit: cover; /* Ensures the image fits nicely */
+  display: block;
+}
+
+
+.container {
+  padding: 2rem 1rem;
+}
+
+
+
+
