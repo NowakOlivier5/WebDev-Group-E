@@ -47,6 +47,7 @@
 						<div class="content-box p-4 mb-4">
 							<h2> Animal Marine Life</h2>
 								<p>UN Sustainable Development Goal 14, "Life Below Water," is all about taking care of our oceans and marine life. It focuses on big threats like overfishing, plastic pollution, harmful chemicals, and habitat loss from coastal building. </p>
+						<a href="https://www.globalgoals.org/goals/14-life-below-water/" class="btn btn-primary">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -59,8 +60,8 @@
             <div class="content-box p-4">
                 <h3>Make a difference today</h3>
                 <p>
-                    Everyday people can make a real difference for marine wildlife and help out with UN Goal 14 by making a few easy changes. Cut down on plastic by using reusable bags, bottles, and straws to keep oceans cleaner. Always throw away trash the right way and recycle to stop waste from ending up in the water. Choose sustainable seafood to avoid overfishing. Get involved in beach cleanups or volunteer for conservation groups. Share what you know about marine issues and support ocean-friendly policies. Small steps, done regularly, can add up to big results for marine life.
-                </p>
+                    Everyday people can make a real difference for marine wildlife and help out with UN Goal 14 by making a few easy changes. Cut down on plastic by using reusable bags, bottles, and straws to keep oceans cleaner. Always throw away trash the right way and recycle to stop waste from ending up in the water. Choose sustainable seafood to avoid overfishing. Get involved in beach cleanups or volunteer for conservation groups. Share what you know about marine issues and support ocean-friendly policies. Small steps, done regularly, can add up to big results for marine life.</p>
+				<a href="https://www.globalgoals.org/take-action/" class="btn btn-primary">Learn more</a>
             </div>
         </div>
     </div>
@@ -75,6 +76,7 @@
                 <p>
                     Oceans, seas and marine resources are increasingly threatened, degraded or destroyed by human activities, reducing their ability to provide crucial ecosystem services. Important classes of threats are, among others, climate change, marine pollution, unsustainable extraction of marine resources and physical alterations and destruction of marine and coastal habitats and landscapes. The deterioration of coastal and marine ecosystems and habitats is negatively affecting human well-being worldwide.
                 </p>
+				<a href="https://www.un.org/sustainabledevelopment/oceans/" class="btn btn-primary">Learn more</a>
             </div>
         </div>
     </div>
@@ -82,37 +84,70 @@
 
   <!-- Randomized Background -->
   <div id="backgroundSection" class="p-5 text-black text-center">
-    <h1>Quiz - Marine Endangered Animals Facts</h1>
   </div>
 
   <!-- True/False Questions -->
-  <div class="container my-5">
-    <form id="quizForm">
-      <div class="mb-3">
-        <p><b>1. The vaquita porpoise is the world's most endangered marine mammal.(True/False)</p>
-        <input type="text" class="form-control" name="question1">
+<div class="container my-5">
+  <form id="quizForm">
+    <h1>Quiz - Marine Endangered Animals Facts</h1>
+    
+    <div class="mb-3">
+      <div class="card">
+        <div class="card-body">
+          <p>The vaquita porpoise is the world's most endangered marine mammal.</p>
+          <input type="radio" id="vaquita-true" name="q1" value="True">
+          <label for="vaquita-true">True</label><br>
+          <input type="radio" id="vaquita-false" name="q1" value="False">
+          <label for="vaquita-false">False</label><br>
+        </div>
       </div>
-      <div class="mb-3">
-        <p><b>2. Climate change impacts at least 41% of threatened marine species. (True/False)</p>
-        <input type="text" class="form-control" name="question2">
-      </div>
-      <div class="mb-3">
-        <p><b>3. The North Atlantic right whale population has increased by 4% in recent years. (True/False)</p>
-        <input type="text" class="form-control" name="question3">
-      </div>
-      <div class="mb-3">
-        <p><b>4. Overfishing is the sole threat to marine species leading to their endangerment. (True/False)</p>
-        <input type="text" class="form-control" name="question4">
-      </div>
-      <div class="mb-3">
-        <p><b>5. The Hawksbill sea turtle is critically endangered due to its unique shell being used in the illegal wildlife trade.(True/False)</p>
-        <input type="text" class="form-control" name="question5">
-      </div>
-      <button type="submit" class="btn btn-success">Submit Answers</button>
-    </form>
-  </div>
 
+      <div class="card">
+        <div class="card-body">
+          <p>Climate change impacts at least 41% of threatened marine species.</p>
+          <input type="radio" id="climate-true" name="q2" value="True">
+          <label for="climate-true">True</label><br>
+          <input type="radio" id="climate-false" name="q2" value="False">
+          <label for="climate-false">False</label><br>
+        </div>
+      </div>
 
+      <div class="card">
+        <div class="card-body">
+          <p>The North Atlantic right whale population has increased by 4% in recent years.</p>
+          <input type="radio" id="whale-true" name="q3" value="True">
+          <label for="whale-true">True</label><br>
+          <input type="radio" id="whale-false" name="q3" value="False">
+          <label for="whale-false">False</label><br>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <p>Overfishing is the sole threat to marine species leading to their endangerment.</p>
+          <input type="radio" id="overfishing-true" name="q4" value="True">
+          <label for="overfishing-true">True</label><br>
+          <input type="radio" id="overfishing-false" name="q4" value="False">
+          <label for="overfishing-false">False</label><br>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <p>The Hawksbill sea turtle is critically endangered due to its unique shell being used in the illegal wildlife trade.</p>
+          <input type="radio" id="turtle-true" name="q5" value="True">
+          <label for="turtle-true">True</label><br>
+          <input type="radio" id="turtle-false" name="q5" value="False">
+          <label for="turtle-false">False</label><br>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" onclick="submitQuiz()">Submit</button>
+  </form>
+
+  <div id="results" class="mt-4"></div>
+</div>
   <footer class="bg-dark text-white text-center py-3">
     <p>© 2024 Alef Dias - All Rights Reserved.</p>
   </footer>
