@@ -91,24 +91,33 @@
 </section>
 	
   <!-- Contact Form -->
-	<section id="contact" class="container py-5 text-center">
-		<h2>Contact Us</h2>
-		<div>
-			<form action="/submit" method="post">
+<section id="contact" class="container py-5 text-center">
+  <h2>Give us some Feedback</h2>
+  <div>
+    <form action="/submit" method="post">
 
-			<label for="name">Name:</label>
-			<input type="text" id="name" name="name"><br><br>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
 
-			<label for="Message">E-mail:</label>
-			<input type="message" id="message" name="message"><br><br>
-			
-			<label for="Message">Message:</label>
-			<input type="message" id="message" name="message"><br><br>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required><br><br>
 
-			<input type="submit" value="Submit">
-			</form>
-		</div>	
-	</section>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <div class="checkboxes">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the <a href="/terms" target="_blank">Terms and Conditions</a></label><br>
+
+        <input type="checkbox" id="privacy" name="privacy" required>
+        <label for="privacy">I agree to the <a href="/privacy-policy" target="_blank">Privacy Policy</a></label><br><br>
+      </div>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>  
+</section>
 	
   <script src="script.js"></script>
   <body style="background-image: url('images/background2.jpg'); background-size: cover; background-attachment: fixed; background-position: center;">
