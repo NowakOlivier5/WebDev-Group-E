@@ -1,26 +1,69 @@
 .icon{
 	width: 15%;
 }
+.on-body{
+	background-image: url(../images/on-bg.jpg);
+	background-repeat: no-repeat; 
+    background-size: cover;      
+    background-position: center;
+}
 .on-p{
 	background-color: #03026f;
 	color: white;
 	text-shadow: black 2px 2px;
 }
+.on-text-bg{
+	background-color: rgba(3, 2, 111, 0.5);
+	height: 100%;
+
+}
 .on-h1{
-	
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: center;
+	background-color: #03026f;
+	color: white;
+	text-shadow: black 2px 2px;
 }
 .on-h2{
 	background-color: #03026f;
 	color: white;
 	text-shadow: black 2px 2px;
 }
+.on-h3{
+	background-color: #03026f;
+	color: white;
+	text-shadow: black 2px 2px;
+}
 .on-img{
 	width: 100%;
-	length: 100%;
+	height: 100%;
 }
 footer{
-	background-color: #03026f;
+	background-color: #01003a;
 }
-.col-sm-6{
-	background-color: black;
+.on-label{
+	color: white;
+	text-shadow: black 2px 2px;
+	
+}
+.on-contents{
+	background-color: rgba(3, 2, 111, 0.5);
+	
+	margin-left: 10%;
+	padding-top: 10%;
+	padding-bottom: 50%;
+}
+.on-contents-list{
+	font-size: 16px;
+	color: white;
+	text-shadow: black 2px 2px;
+}
+.feedback{
+	background-color: rgba(3, 2, 111, 0.5);
+	margin-right: 10%;
+	padding-top: 10%;
+	padding-bottom: 23%;
 }

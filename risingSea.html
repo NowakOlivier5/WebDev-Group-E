@@ -13,7 +13,7 @@
 		<script src="scripts/on-external.js"></script>
 	</head>
 
-	<body onload="randFact()">
+	<body onload="randFact()" class="on-body">
 		<nav class="navbar navbar-expand-sm bg-light navbar-light">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="Icon" class="icon" width="15%"></a>
@@ -62,6 +62,7 @@
 					
 				</div>
 				<div class="col-sm-6">
+					<div class="on-text-bg">
 					<h2 class="on-h2">Causes of sea level rise</h2>
 					<p class="on-p">Thermal expansion: When water heats up, it expands. About half of the sea-level rise over the past 25 years is attributable to warmer oceans simply occupying more space. 
 					<br>
@@ -70,17 +71,20 @@
 					<br>
 					<br>
 					Loss of Greenland and Antarctica’s ice sheets: As with mountain glaciers, increased heat is causing the massive ice sheets that cover Greenland and Antarctica to melt more quickly. Scientists also believe that meltwater from above and seawater from below is seeping beneath Greenland's ice sheets, effectively lubricating ice streams and causing them to move more quickly into the sea. While melting in West Antarctica has drawn considerable focus from scientists, especially with the 2017 break in the Larsen C ice shelf, glaciers in East Antarctica are also showing signs of destabilizing.</p>
+					</div>
 				</div>
 			</div>
 			<br>
 			<br>
 			<div class="row">
 				<div class="col-sm-6">
+					<div class="on-text-bg">
 					<h2 class="on-h2">About Sea Level Rise</h2>
 					<p class="on-p">Rising global sea level is a critical consequence of climate change. As ocean waters warm, they expand. Also, as air temperatures warm, water from melting ice sheets, polar ice caps, and glaciers enters into our ocean basins.
 					<br>
 					<br>
 					Sea level rise is not uniform across the globe. Coastal communities are affected by their local sea level rise, which reflects global sea level rise, changes in local land elevation, tides and winds. In Grand Isle, Louisiana, for example, local sea level is rising about 3.5 inches per decade because the land is sinking and sea level is rising.</p>
+					</div>
 				</div>
 				<div class="col-sm-6">
 					<img src="images/floodedRoad2.png" alt="Another Flooded Road" class="on-img">
@@ -93,8 +97,11 @@
 					<img src="images/submergedCar.png" alt="Submerged Car" class="on-img">
 				</div>
 				<div class="col-sm-6">
+					<div class="on-text-bg">
 					<h2 class="on-h2">Consequences of Sea Level Rise</h2>
 					<p class="on-p">Changing sea levels can affect human activities in coastal areas. Rising sea level inundates low-lying wetlands and dry land, erodes shorelines, contributes to coastal flooding, and increases the flow of salt water into estuaries and nearby groundwater aquifers. Higher sea level also makes coastal infrastructure more vulnerable to damage from storms.
+					</p>
+					</div>
 					<br>
 					<br>
 					The sea level changes that affect coastal systems involve more than just expanding oceans, however, because the Earth’s continents can also rise and fall relative to the oceans. Land can rise through processes such as sediment accumulation (the process that built the Mississippi River delta) and geological uplift (for example, as glaciers melt and the land below is no longer weighed down by heavy ice). In other areas, land can sink because of erosion, sediment compaction, natural subsidence (sinking due to geologic changes), groundwater withdrawal, or engineering projects that prevent rivers from naturally depositing sediments along their banks. Changes in ocean currents such as the Gulf Stream can also affect sea levels by pushing more water against some coastlines and pulling it away from others, raising or lowering sea levels accordingly.
@@ -105,8 +112,10 @@
 			<br>
 			<div class="row">
 				<div class="col-sm-6">
-					<h2 class="on-h2">Fun Fact</h2>
-					<p id="didYouKnow"></p>
+					<div class="on-text-bg">
+						<h2 class="on-h2">Fun Fact</h2>
+						<p class="on-p" id="didYouKnow"></p>
+					</div>
 				</div>
 				<div class="col-sm-6">
 					<img src="images/didYouKnow.png" alt="Did you know?" class="on-img">
@@ -118,37 +127,39 @@
 		
 		<footer>
 		<div class="row">
-			<div class="col-sm-9">
-				<div class="contents">
+			<div class="col-sm-3">
+				<div class="on-contents">
 					<h2 class="on-h2">Contents</h2>
-					<ol>
+					<ul class="on-contents-list">
 						<li><a class="dropdown-item" href="darkoxygen.html">Dark Oxygen</a></li>
 						<li><a class="dropdown-item" href="risingSea.html">Rising Sea Levels</a></li>
 						<li><a class="dropdown-item" href="#">Oliver2</a></li>
 						<li><a class="dropdown-item" href="#">Alef</a></li>
 						<li><a class="dropdown-item" href="#">Alef2</a></li>
-					</ol>
+					</ul>
 				</div>
 			</div>
+			<div class="col-sm-6">
+			</div>
 			<div class="col-sm-3">
-				<form class="feedback">
+				<form class="feedback" onsubmit="return onValidateForm()" method="post">
 					<h2 class="on-h2">Contact Us</h2>
 					<label class="on-label" for="fname">First Name:</label>
 					<br>
-					<input type="text" id="fname" name="fname">
+					<input type="text" id="fname" name="fname" required>
 					<br>
 					<label class="on-label" for="email">Email:</label>
 					<br>
-					<input type="text" id="email" name="email">
+					<input type="text" id="email" name="email" required>
 					<h3 class="on-h3">Reason</h3>
-					<input type="radio" id="support" name="support" value="support">
+					<input type="radio" id="support" name="response" value="support" required>
 					<label class="on-label" for="support">Support</label>
 					<br>
-					<input type="radio" id="feedback" name="feedback" value="feedback">
+					<input type="radio" id="feedback" name="response" value="feedback" required>
 					<label class="on-label" for="feedback">Feedback</label>
 					<br>
 					<br>
-					<input type="checkbox" id="consent" name="consent" value="consent">
+					<input type="checkbox" id="consent" name="consent" value="consent" required>
 					<label class="on-label" for="consent"> I give permission to be contacted through this email</label>
 					<br>
 					<br>

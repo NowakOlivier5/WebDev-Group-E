@@ -16,3 +16,19 @@ let facts = [
 function randFact(){
     document.getElementById("didYouKnow").innerHTML = facts[randNum(0,6)];
 }
+function onValidateForm(){
+    var onEmail = document.getElementById("email").value;
+    var onName = document.getElementById("name").value;
+
+    if (!onEmail.includes("@")) {
+        alert("Please enter a valid email.");
+        return "invalid";
+    }
+    else if (onName.includes(1||2||3||4||5||6||7||8||9||0)){
+        alert("Please enter a valid name.");
+        return "invalid";
+    }
+    else{
+        return "valid";
+    }
+}
