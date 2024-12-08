@@ -18,8 +18,8 @@ function randFact(){
 }
 function onValidateForm(){
     var onEmail = document.getElementById("email").value;
-    var onName = document.getElementById("name").value;
-
+    var onName = document.getElementById("fname").value;
+    
     if (!onEmail.includes("@")) {
         alert("Please enter a valid email.");
         return "invalid";

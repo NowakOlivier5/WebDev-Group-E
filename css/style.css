@@ -67,3 +67,17 @@ footer{
 	padding-top: 10%;
 	padding-bottom: 23%;
 }
+.navbar{
+	background-color: #01003a;
+	color: white;
+}
+.nav-link{
+	color: white;
+	
+}
+.nav-link:hover{
+	color: white;	
+}
+.nav-link[aria-expanded="true"]{
+	color: white;	
+}
