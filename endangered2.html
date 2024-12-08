@@ -112,9 +112,51 @@
 	
 </section>
   <script src="scripts/asexternal.js"></script>
-  <footer class="bg-dark text-white text-center py-3">
-        <p>© 2024 Alef Dias - All Rights Reserved.</p>
-    </footer>
+  <footer>
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="on-contents">
+					<h2 class="on-h2">Contents</h2>
+					<ul class="on-contents-list">
+						<li><a class="dropdown-item" href="darkOxygen.html">Dark Oxygen</a></li>
+						<li><a class="dropdown-item" href="risingSea.html">Rising Sea Levels</a></li>
+						<li><a class="dropdown-item" href="endangered.html">Endangered</a></li>
+						<li><a class="dropdown-item" href="endangered2.html">Endangered 2</a></li>
+						<li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+						<li><a class="dropdown-item" href="aboutUs.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6">
+			</div>
+			<div class="col-sm-3">
+				<form class="on-contact-us" onsubmit="return onValidateForm()" method="post"> <!--when submit is clicked it will run the validation code -->
+					<h2 class="on-h2">Contact Us</h2>
+					<label class="on-label" for="fname">First Name:</label>
+					<br>
+					<input type="text" id="fname" name="fname" required>
+					<br>
+					<label class="on-label" for="email">Email:</label>
+					<br>
+					<input type="text" id="email" name="email" required>
+					<h3 class="on-h3">Reason</h3>
+					<input type="radio" id="support" name="response" value="support" required>
+					<label class="on-label" for="support">Support</label>
+					<br>
+					<input type="radio" id="feedback" name="response" value="feedback" required>
+					<label class="on-label" for="feedback">Feedback</label>
+					<br>
+					<br>
+					<input type="checkbox" id="consent" name="consent" value="consent" required>
+					<label class="on-label" for="consent"> I give permission to be contacted through this email</label>
+					<br>
+					<br>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+		</footer>
+		<script src="scripts/on-external.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
