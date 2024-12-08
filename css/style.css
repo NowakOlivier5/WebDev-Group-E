@@ -11,6 +11,15 @@
 	background-color: #03026f;
 	color: white;
 	text-shadow: black 2px 2px;
+	font-family: "Lora", serif;
+  	font-optical-sizing: auto;
+ 	font-style: normal;
+}
+.on-ul{
+	color: white;
+	font-family: "Lora", serif;
+  	font-optical-sizing: auto;
+ 	font-style: normal;
 }
 .on-text-bg{
 	background-color: rgba(3, 2, 111, 0.5);
@@ -26,16 +35,25 @@
 	background-color: #03026f;
 	color: white;
 	text-shadow: black 2px 2px;
+	font-family: "Merriweather", serif;
+  	font-weight: 400;
+ 	font-style: normal;
 }
 .on-h2{
 	background-color: #03026f;
 	color: white;
 	text-shadow: black 2px 2px;
+	font-family: "Merriweather", serif;
+ 	font-weight: 400;
+  	font-style: normal;
 }
 .on-h3{
 	background-color: #03026f;
 	color: white;
 	text-shadow: black 2px 2px;
+	font-family: "Merriweather", serif;
+  	font-weight: 400;
+  	font-style: normal;
 }
 .on-img{
 	width: 100%;
@@ -47,6 +65,9 @@ footer{
 .on-label{
 	color: white;
 	text-shadow: black 2px 2px;
+	font-family: "Lora", serif;
+  	font-optical-sizing: auto;
+ 	font-style: normal;
 	
 }
 .on-contents{
@@ -60,6 +81,9 @@ footer{
 	font-size: 16px;
 	color: white;
 	text-shadow: black 2px 2px;
+	font-family: "Lora", serif;
+  	font-optical-sizing: auto;
+ 	font-style: normal;
 }
 .feedback{
 	background-color: rgba(3, 2, 111, 0.5);
@@ -73,11 +97,25 @@ footer{
 }
 .nav-link{
 	color: white;
+	font-family: "Merriweather", serif;
+  	font-weight: 400;
+  	font-style: normal;
 	
 }
 .nav-link:hover{
 	color: white;	
+	font-family: "Merriweather", serif;
+  	font-weight: 400;
+  	font-style: normal;
 }
-.nav-link[aria-expanded="true"]{
-	color: white;	
+.on-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px; 
+}
+.on-grid img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }

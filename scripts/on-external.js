@@ -16,6 +16,8 @@ let facts = [
 function randFact(){
     document.getElementById("didYouKnow").innerHTML = facts[randNum(0,6)];
 }
+
+/*Validation, checks email for @ symbol and makes sure name doesnt contain numbers*/
 function onValidateForm(){
     var onEmail = document.getElementById("email").value;
     var onName = document.getElementById("fname").value;
