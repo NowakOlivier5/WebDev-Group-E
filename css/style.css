@@ -1,11 +1,12 @@
 .icon{
 	width: 15%;
 }
+/*on stands for Olivier Nowak, showing which tags are mine*/
 .on-body{
 	background-image: url(../images/on-bg.jpg);
 	background-repeat: no-repeat; 
-    background-size: cover;      
-    background-position: center;
+    	background-size: cover;      
+   	 background-position: center;
 }
 .on-p{
 	background-color: #03026f;
@@ -85,7 +86,7 @@ footer{
   	font-optical-sizing: auto;
  	font-style: normal;
 }
-.feedback{
+.on-contact-us{
 	background-color: rgba(3, 2, 111, 0.5);
 	margin-right: 10%;
 	padding-top: 10%;
